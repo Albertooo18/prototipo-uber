@@ -1,0 +1,27 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Variables de entorno
+.env
+.env.*
+
+# Dependencias comunes
+node_modules/
+
+# Builds comunes
+dist/
+build/
+coverage/
+
+# Caches and temp files
+.expo/
+*.tsbuildinfo
+*.zip

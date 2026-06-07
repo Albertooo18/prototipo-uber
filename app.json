@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Arcami Cliente",
+    "slug": "arcami-cliente",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "arcami-cliente",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.arcami.cliente",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Arcami usa tu ubicacion para mostrar tu punto de recogida y solicitar servicios cercanos."
+      }
+    },
+    "android": {
+      "package": "com.arcami.cliente",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Arcami usa tu ubicacion para mostrar tu punto de recogida y solicitar servicios cercanos."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "sounds": []
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "apiUrl": "${EXPO_PUBLIC_API_URL}",
+      "googleMapsApiKey": "${EXPO_PUBLIC_GOOGLE_MAPS_API_KEY}"
+    }
+  }
+}
